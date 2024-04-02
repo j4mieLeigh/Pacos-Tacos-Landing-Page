@@ -3,23 +3,32 @@ body {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/pexels-los-muertos-crew-7613568.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   padding: 150px;
-  text-align: center;
 }
 
 h1 {
-  color: white;
-  font-size: 60px;
+  color: #ffffff;
+  font-size: 4em;
+  text-align: center;
 }
 
 p,
 ul {
   font-size: 28px;
   padding: 30px 90px;
+}
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/pexels-los-muertos-crew-8230030.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  margin: 0 auto;
 }
