@@ -1,5 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
   text-transform: lowercase;
 }
 
@@ -19,33 +20,53 @@ a {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/pexels-los-muertos-crew-7613568.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/pexels-los-muertos-crew-7613568.jpg") center/cover no-repeat
+      fixed;
+  display: flex;
+  height: 300px;
+  justify-content: center;
   margin: 0 auto;
   padding: 150px;
 }
 
 h1 {
   color: #ffffff;
-  font-size: 4em;
-  text-align: center;
+  font-size: 64px;
   text-transform: uppercase;
 }
 
-p,
+.about-info,
 .services ul {
   font-size: 28px;
   padding: 30px 90px;
 }
 
+.image-gallery {
+  display: flex;
+  width: vw;
+}
+
+.image-gallery img {
+  height: 250px;
+  width: 250px;
+}
+
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/pexels-los-muertos-crew-8230030.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/pexels-los-muertos-crew-8230030.jpg") center/cover no-repeat
+      fixed;
+  color: white;
+  height: 500px;
   margin: 0 auto;
+}
+
+footer p {
+  font-size: 28px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
 }
