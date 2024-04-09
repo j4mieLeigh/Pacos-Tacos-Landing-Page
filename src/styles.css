@@ -7,7 +7,7 @@
 body {
   font-family: "Marcellus SC", serif;
   font-size: 24px;
-  line-height: 1.5;
+  suggestion-height: 1.5;
 }
 
 a {
@@ -73,6 +73,7 @@ h1 {
 }
 
 .header-btn {
+  border-radius: 4px;
   outline: 0.125rem solid rgb(119, 148, 35);
   outline-offset: 0.25rem;
   font-size: 1.25rem;
@@ -90,13 +91,28 @@ h2 {
 
 .about-section {
   background-color: #f5e6e2;
-  padding: 60px 90px;
+  padding: 90px 90px;
 }
 
-.line-one::first-letter,
-.line-two::first-letter,
-.line-three::first-letter {
+.about-suggestions {
+  padding: 90px 40px 0px 0px;
+}
+
+.about-suggestions-and-image {
+  display: flex;
+  padding: 0 0 30px 0;
+}
+
+.suggestion-one::first-letter,
+.suggestion-two::first-letter,
+.suggestion-three::first-letter {
   font-size: 44px;
+}
+
+.about-image {
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 40%;
 }
 
 .business {
@@ -115,23 +131,23 @@ h2 {
 }
 
 .services-section {
-  background: #f7e1d7;
+  background: #f7e4e6;
   display: flex;
 }
 
 h4 {
   font-size: 24px;
   margin: 0 auto;
-  max-width: 18rem;
 }
 
 h5 {
   font-size: 18px;
+  margin: 30px auto;
 }
 
 .icon {
   display: block;
-  margin: 30px;
+  margin: 30px 30px 40px 30px;
 }
 
 .service {
@@ -146,13 +162,6 @@ h5 {
   box-shadow: 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* @media screen and (min-width: 576px) {
-  .service {
-    float: left;
-    width: 50%;
-  }
-} */
-
 footer {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../images/pexels-los-muertos-crew-8230030.jpg") center/cover no-repeat
@@ -160,7 +169,7 @@ footer {
   color: white;
   height: 500px;
   margin: 0 auto;
-  padding: 100px;
+  padding: 60px;
 }
 
 footer p {
@@ -169,13 +178,15 @@ footer p {
 
 .contact-form-container {
   background: white;
+  border-radius: 4px;
   padding: 30px;
 }
 
 input,
 textarea {
-  background-color: #f8efed;
+  background-color: #e7f6e7;
   border: none;
+  border-radius: 4px;
   padding: 5px;
   text-transform: uppercase;
 }
@@ -188,4 +199,24 @@ textarea {
 .contact-info {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .image-gallery {
+    display: block;
+  }
+
+  img {
+    display: block;
+    height: 50px;
+    width: 100vw;
+  }
+
+  .services-section {
+    display: block;
+  }
 }
