@@ -73,7 +73,7 @@ h1 {
 }
 
 .header-btn {
-  outline: 0.125rem solid #779423;
+  outline: 0.125rem solid rgb(119, 148, 35);
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.7rem;
@@ -90,10 +90,13 @@ h2 {
 
 .about-section {
   background-color: #f5e6e2;
+  padding: 60px 90px;
 }
 
-.about-info::first-letter {
-  font-size: 64px;
+.line-one::first-letter,
+.line-two::first-letter,
+.line-three::first-letter {
+  font-size: 44px;
 }
 
 .business {
@@ -102,21 +105,53 @@ h2 {
   letter-spacing: 2px;
 }
 
-.about-info,
-.services ul {
-  font-size: 28px;
-  padding: 30px 90px;
-}
-
 .image-gallery {
   display: flex;
-  width: vw;
 }
 
 .image-gallery img {
   height: 250px;
-  width: 250px;
+  width: 14.286%;
 }
+
+.services-section {
+  background: #f7e1d7;
+  display: flex;
+}
+
+h4 {
+  font-size: 24px;
+  margin: 0 auto;
+  max-width: 18rem;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+.icon {
+  display: block;
+  margin: 30px;
+}
+
+.service {
+  padding: 30px;
+  width: 14.286%;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
+
+.service:hover {
+  background-color: white;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* @media screen and (min-width: 576px) {
+  .service {
+    float: left;
+    width: 50%;
+  }
+} */
 
 footer {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -125,6 +160,7 @@ footer {
   color: white;
   height: 500px;
   margin: 0 auto;
+  padding: 100px;
 }
 
 footer p {
