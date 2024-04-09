@@ -1,7 +1,45 @@
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Marcellus SC", serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Marcellus SC", serif;
   font-size: 24px;
-  text-transform: lowercase;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  background: #779423;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  max-width: 200px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar {
+  background-color: white;
+  padding: 15px 15px 15px 0px;
+  position: fixed;
+  width: 100vw;
 }
 
 .navbar ul,
@@ -15,26 +53,53 @@
   padding-right: 30px;
 }
 
-a {
-  text-decoration: none;
-}
-
 header {
-  align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/pexels-los-muertos-crew-7613568.jpg") center/cover no-repeat
       fixed;
-  display: flex;
   height: 300px;
-  justify-content: center;
   margin: 0 auto;
-  padding: 150px;
+  padding: 250px 150px 150px 150px;
 }
 
 h1 {
-  color: #ffffff;
-  font-size: 64px;
+  color: white;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 75px;
+  letter-spacing: 5px;
+  margin: 0 0 30px 0;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.header-btn {
+  outline: 0.125rem solid #779423;
+  outline-offset: 0.25rem;
+  font-size: 1.25rem;
+  padding: 1rem 1.7rem;
+}
+
+.btn:hover {
+  background-color: #9dc22f;
+}
+
+h2 {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 28px;
+}
+
+.about-section {
+  background-color: #f5e6e2;
+}
+
+.about-info::first-letter {
+  font-size: 64px;
+}
+
+.business {
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 45px;
+  letter-spacing: 2px;
 }
 
 .about-info,
@@ -64,6 +129,24 @@ footer {
 
 footer p {
   font-size: 28px;
+}
+
+.contact-form-container {
+  background: white;
+  padding: 30px;
+}
+
+input,
+textarea {
+  background-color: #f8efed;
+  border: none;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.placeholder {
+  font-size: 8px;
+  letter-spacing: 2px;
 }
 
 .contact-info {

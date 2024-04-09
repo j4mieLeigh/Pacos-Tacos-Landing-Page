@@ -11,6 +11,19 @@
       rel="stylesheet"
       href="/src/styles.css"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Marcellus+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div
@@ -26,16 +39,27 @@
     </div>
     <header>
       <h1>Paco's Tacos and Legal Advice</h1>
-      <div class="title-underline"></div>
+      <div>
+        <a
+          href="#services"
+          class="btn header-btn"
+          >Learn more</a
+        >
+      </div>
     </header>
     <main>
-      <h2 id="about">about</h2>
-      <p class="about-info">
-        Running from the law and hungry for a taco? Need a divorce
-        <em>and</em> a snack break? <br />Drafting your will got you thinking
-        about the good things in life? <br /><br />Paco's Tacos and Legal
-        Advice: When you've been served, we'll serve you right.
-      </p>
+      <section class="about-section">
+        <h2 id="about-heading">about</h2>
+
+        <p class="about-info">
+          Running from the law and hungry for a taco? Need a divorce
+          <em>and</em> a snack break? <br />Drafting your will got you thinking
+          about the good things in life? <br /><br /><span class="business"
+            >Paco's Tacos and Legal Advice:</span
+          >
+          When you've been served, we'll serve you right.
+        </p>
+      </section>
       <div class="image-gallery">
         <img
           src="./images/pexels-amar-preciado-18032209.jpg"
@@ -87,36 +111,39 @@
           <p>📍Right down the street</p>
           <p>Hours: Mon-Sat 11am to 9pm</p>
         </div>
-        <div class="send-message">
-          <p>Get in touch!</p>
-          <form>
-            <label for="name">name</label>
-            <br />
+        <div class="contact-us">
+          <p>Contact us</p>
+          <div class="contact-form-container">
+            <form>
+              <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="NAME"
+              />
+              <br />
+              <br />
 
-            <input
-              type="text"
-              name="name"
-              id="name"
-            />
-            <br />
-            <br />
-            <label for="email">email</label>
-            <br />
+              <input
+                type="text"
+                placeholder="EMAIL"
+              />
+              <br />
+              <br />
 
-            <input type="text" />
-            <br />
-            <br />
-            <label for="message">message</label>
-            <br />
-
-            <textarea
-              name="message"
-              id="message"
-            ></textarea>
-            <br />
-            <br />
-            <input type="submit" />
-          </form>
+              <textarea
+                id="message"
+                placeholder="message"
+              ></textarea>
+              <br />
+              <br />
+              <input
+                type="submit"
+                class="btn"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </footer>
