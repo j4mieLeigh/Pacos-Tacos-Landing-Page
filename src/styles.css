@@ -38,7 +38,7 @@ img {
 
 .navbar {
   background-color: white;
-  padding: 15px 15px 15px 0px;
+  padding: 15px;
   position: fixed;
   width: 100vw;
 }
@@ -46,6 +46,7 @@ img {
 .navbar ul,
 .navbar li {
   display: inline-block;
+  font-family: "Barlow", sans-serif;
   font-size: 22px;
   letter-spacing: 3px;
   list-style: none;
@@ -58,6 +59,7 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/pexels-los-muertos-crew-7613568.jpg") center/cover no-repeat
       fixed;
+  height: 600px;
   margin: 0 auto;
   padding: 250px 150px 150px 150px;
 }
@@ -146,7 +148,12 @@ h2 {
   max-width: 40%;
 }
 
-.business {
+.tagline {
+  letter-spacing: 1.5px;
+  padding-top: 30px;
+}
+
+.company-name {
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 45px;
   letter-spacing: 2px;
@@ -168,13 +175,16 @@ h2 {
 }
 
 h4 {
+  color: #779423;
   font-size: 24px;
+  letter-spacing: 1.5px;
   margin: 0 auto;
 }
 
-h5 {
+.services-section p {
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .icon {
@@ -196,42 +206,75 @@ h5 {
 }
 
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/pexels-los-muertos-crew-8230030.jpg") center/cover no-repeat
       fixed;
-  color: white;
-  height: 500px;
+  height: 600px;
   margin: 0 auto;
-  padding: 60px;
+  padding: 90px 45px;
+}
+
+footer h4 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 footer p {
-  font-size: 28px;
-}
-
-.contact-form-container {
-  background: white;
-  border-radius: 4px;
-  padding: 30px;
-}
-
-input,
-textarea {
-  background-color: #e7f6e7;
-  border: none;
-  border-radius: 4px;
-  padding: 5px;
-  text-transform: uppercase;
-}
-
-.placeholder {
-  font-size: 8px;
-  letter-spacing: 2px;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .contact-info {
   display: flex;
   justify-content: space-evenly;
+}
+
+.location-and-hours {
+  padding: 30px 0 0 0;
+}
+
+.contact-form-container {
+  background: rgb(237, 238, 239, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 22vw;
+}
+
+input,
+textarea {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.placeholder {
+  font-family: "Barlow", sans-serif;
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+.by {
+  color: white;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.by a {
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.by a:hover {
+  color: #9dc22f;
+  text-decoration: underline;
 }
 
 @media (max-width: 800px) {
