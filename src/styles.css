@@ -36,7 +36,7 @@ img {
   transition: all 200ms ease-in-out;
 }
 
-.navbar {
+/* .navbar {
   background-color: white;
   padding: 15px;
   position: fixed;
@@ -53,6 +53,106 @@ img {
   margin-left: 0;
   padding-left: 0;
   padding-right: 30px;
+} */
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.nav-btn {
+  animation: bounce 2s ease infinite;
+  color: #779423;
+  cursor: pointer;
+  font-size: 2.5rem;
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  z-index: 1;
+}
+
+.navbar {
+  background-color: #edeeef;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  transform: translatex(-100%);
+  transition: all 100ms ease-in-out;
+}
+
+.showNav {
+  transform: translate(0);
+}
+
+.navbar-header {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.nav-close {
+  color: #8c361b;
+  cursor: pointer;
+  font-size: 2.5rem;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-close:hover {
+  color: #d64c22;
+}
+
+.nav-items {
+  list-style-type: none;
+  padding: 45px 0;
+}
+
+.nav-link {
+  color: #1c2a01;
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #9dc22f;
+  border-left: 0.25rem solid #1c2a01;
+  color: white;
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    width: 35vw;
+    max-width: 20rem;
+  }
 }
 
 header {
@@ -61,7 +161,7 @@ header {
       fixed;
   height: 600px;
   margin: 0 auto;
-  padding: 250px 150px 150px 150px;
+  padding: 200px 150px 150px 150px;
 }
 
 h1 {
@@ -69,7 +169,7 @@ h1 {
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 75px;
   letter-spacing: 5px;
-  margin: 0 0 30px 0;
+  margin: 0 0 45px 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -144,7 +244,7 @@ h2 {
 
 .about-image {
   border-radius: 8px;
-  padding: 5px 5px 15px 5px;
+  padding: 10px 10px 20px 10px;
   max-width: 40%;
 }
 
@@ -249,13 +349,12 @@ textarea {
   border: none;
   border-radius: 4px;
   padding: 10px;
-  text-transform: uppercase;
   width: 100%;
 }
 
-.placeholder {
+::placeholder {
   font-family: "Barlow", sans-serif;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 2px;
 }
 

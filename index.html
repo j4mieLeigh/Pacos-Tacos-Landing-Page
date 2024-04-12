@@ -31,7 +31,7 @@
     />
   </head>
   <body>
-    <div
+    <!-- <div
       class="navbar"
       id="home"
     >
@@ -41,7 +41,54 @@
         <li><a href="#services">services</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
-    </div>
+    </div> -->
+    <span
+      class="nav-btn"
+      id="nav-btn"
+      ><i class="fas fa-bars"></i
+    ></span>
+    <nav
+      class="navbar"
+      id="navbar"
+    >
+      <div class="navbar-header">
+        <span
+          class="nav-close"
+          id="nav-close"
+          ><i class="fas fa-times"></i
+        ></span>
+      </div>
+      <ul class="nav-items">
+        <li>
+          <a
+            href="index.html"
+            class="nav-link"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about-section"
+            class="nav-link"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services-section"
+            class="nav-link"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact-section"
+            class="nav-link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
     <header>
       <h1>Paco's Tacos and Legal Advice</h1>
       <div>
@@ -117,7 +164,10 @@
           />
         </div>
       </section>
-      <section class="services-section">
+      <section
+        class="services-section"
+        id="services-section"
+      >
         <article class="service">
           <span class="services-icon"></span
           ><i
@@ -125,7 +175,9 @@
             style="color: #779423"
           ></i>
           <h4>Estate planning</h4>
-          <p>Make friends or enemies of your loved ones, as you prefer</p>
+          <p>
+            Make friends or enemies of your loved ones, it's totally up to you
+          </p>
         </article>
         <article class="service">
           <span class="services-icon"></span
@@ -188,71 +240,77 @@
     </main>
 
     <footer>
-      <div class="contact-info">
-        <div class="location-and-hours">
-          <h4>
-            <span class="contact-icon"
-              ><i
-                class="fa-solid fa-location-dot"
-                style="color: #779423"
-              ></i
-            ></span>
-            Address
-          </h4>
-          <p>Right down the street</p>
-          <h4>
-            <span><i class="fa-solid fa-phone"></i></span> Phone
-          </h4>
-          <p>(555) 555-TACO</p>
-          <h4>
-            <span
-              ><i
-                class="fa-solid fa-clock"
-                style="color: #779423"
-              ></i
-            ></span>
-            Hours
-          </h4>
-          <p>Mon-Sat 11am to 9pm</p>
-        </div>
-        <div class="contact-form">
-          <div class="contact-form-container">
-            <form>
-              <br />
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="NAME"
-              />
-              <br />
-              <br />
+      <section
+        class="contact-section"
+        id="contact-section"
+      >
+        <div class="contact-info">
+          <div class="location-and-hours">
+            <h4>
+              <span class="contact-icon"
+                ><i
+                  class="fa-solid fa-location-dot"
+                  style="color: #779423"
+                ></i
+              ></span>
+              Address
+            </h4>
+            <p>Right down the street</p>
+            <h4>
+              <span><i class="fa-solid fa-phone"></i></span> Phone
+            </h4>
+            <p>(555) 555-TACO</p>
+            <h4>
+              <span
+                ><i
+                  class="fa-solid fa-clock"
+                  style="color: #779423"
+                ></i
+              ></span>
+              Hours
+            </h4>
+            <p>Mon-Sat 11am to 9pm</p>
+          </div>
+          <div class="contact-form">
+            <div class="contact-form-container">
+              <form>
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                />
+                <br />
+                <br />
 
-              <input
-                type="text"
-                placeholder="EMAIL"
-              />
-              <br />
-              <br />
+                <input
+                  type="text"
+                  placeholder="Email"
+                />
+                <br />
+                <br />
 
-              <textarea
-                id="message"
-                placeholder="message"
-              ></textarea>
-              <br />
-              <br />
-              <input
-                type="submit"
-                class="btn"
-              />
-            </form>
+                <textarea
+                  id="message"
+                  placeholder="Message"
+                ></textarea>
+                <br />
+                <br />
+                <input
+                  type="submit"
+                  class="btn"
+                />
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="by">
-        Coded 👩‍💻 by <a href="https://github.com/j4mieLeigh">Jamie Leigh</a> |
-        Open-sourced 👋 on Github | Hosted 🥳 by Netlify
-      </div>
+        <div class="by">
+          Coded 👩‍💻 by <a href="https://github.com/j4mieLeigh">Jamie Leigh</a> |
+          Open-sourced 👋 on Github | Hosted 🥳 by Netlify
+        </div>
+      </section>
     </footer>
+    <script src="/src/app.js"></script>
   </body>
 </html>
