@@ -26,7 +26,7 @@ img {
   color: white;
   cursor: pointer;
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 2px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
@@ -148,13 +148,6 @@ img {
   padding-left: 30px;
 }
 
-@media screen and (min-width: 768px) {
-  .navbar {
-    width: 35vw;
-    max-width: 20rem;
-  }
-}
-
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/pexels-los-muertos-crew-7613568.jpg") center/cover no-repeat
@@ -198,7 +191,7 @@ h2::first-letter {
 
 .about-section {
   background-color: #fff3f4;
-  padding: 90px 90px;
+  padding: 30px 90px 0px 90px;
 }
 
 .about-suggestions-and-image {
@@ -209,7 +202,7 @@ h2::first-letter {
 .about-suggestions::before {
   border-top: 3px solid #8c361b;
   border-left: 3px solid #8c361b;
-  top: 42px;
+  top: 82px;
   left: -22px;
   content: "";
   width: 14rem;
@@ -221,7 +214,7 @@ h2::first-letter {
 
 .about-suggestions {
   height: 20vh;
-  padding-top: 60px;
+  padding-top: 100px;
   position: relative;
   width: 85vw;
 }
@@ -229,8 +222,8 @@ h2::first-letter {
 .about-suggestions::after {
   border-bottom: 3px solid #8c361b;
   border-right: 3px solid #8c361b;
-  bottom: -90px;
-  right: 55px;
+  bottom: -160px;
+  right: -15px;
   content: "";
   width: 14rem;
   z-index: 1;
@@ -241,28 +234,25 @@ h2::first-letter {
 
 .about-image {
   border-radius: 8px;
-  padding: 40px;
+  padding: 60px;
   max-width: 40%;
 }
 
-.tagline {
+.tagline-section {
+  color: white;
+  background-color: #1c2a01;
+  padding: 40px 85px;
+}
+
+span.tagline {
+  font-size: 20px;
   letter-spacing: 1.5px;
-  padding-top: 30px;
 }
 
 .company-name {
   font-family: "Love Ya Like A Sister", cursive;
   font-size: 34px;
   letter-spacing: 2px;
-}
-
-.image-gallery {
-  display: flex;
-}
-
-.image-gallery img {
-  height: 200px;
-  width: 14.286%;
 }
 
 .services-section {
@@ -302,6 +292,15 @@ h4 {
   transform: scale(1.1);
 }
 
+.image-gallery {
+  display: flex;
+}
+
+.image-gallery img {
+  height: 200px;
+  width: 14.286%;
+}
+
 footer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/pexels-los-muertos-crew-8230030.jpg") center/cover no-repeat
@@ -312,14 +311,14 @@ footer {
 }
 
 footer h4 {
-  font-size: 26px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 footer p {
   color: white;
   font-family: "Barlow", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
@@ -357,39 +356,57 @@ textarea {
 
 .by {
   color: white;
-  font-size: 17px;
+  font-size: 14px;
   font-family: "Courier New", Courier, monospace;
   margin-top: 60px;
   text-align: center;
 }
 
 .by a {
-  color: #ffe7e9;
-  font-size: 16px;
+  color: #ff7be7;
   font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  letter-spacing: 1.15px;
 }
 
 .by a:hover {
-  color: #9dc22f;
+  color: #ffb0f1;
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media screen and (min-width: 769px) {
+  .navbar {
+    width: 35vw;
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
   h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
 
-  .image-gallery {
+  /* .image-gallery {
     display: block;
+  } */
+
+  .about-suggestions::before,
+  .about-suggestions::after,
+  .about-image {
+    display: none;
   }
 
   img {
     display: block;
-    height: 50px;
-    width: 100vw;
+    width: 100%;
   }
 
-  .services-section {
+  .service {
     display: block;
+    width: 100%;
+  }
+
+  .by {
+    font-size: 11px;
   }
 }
