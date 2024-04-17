@@ -23,13 +23,14 @@ img {
 .btn {
   background: #779423;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 15px 15px 15px 0;
   color: white;
   cursor: pointer;
   display: block;
   font-size: 18px;
   letter-spacing: 2px;
   margin: 0 auto;
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1rem;
   max-width: 200px;
   text-align: center;
   text-transform: uppercase;
@@ -168,7 +169,7 @@ h1 {
 }
 
 .header-btn {
-  border-radius: 4px;
+  border-radius: 15px 15px 15px 0;
   outline: 0.125rem solid rgb(119, 148, 35);
   outline-offset: 0.25rem;
   font-size: 1.1rem;
@@ -233,7 +234,7 @@ h2::first-letter {
 }
 
 .about-image {
-  border-radius: 8px;
+  border-radius: 100px 100px 100px 0px;
   padding: 60px;
   max-width: 40%;
 }
@@ -292,14 +293,32 @@ h4 {
   transform: scale(1.1);
 }
 
-.image-gallery {
+.success-stories-section {
+  background-color: #8c361b;
+  padding: 60px;
+}
+
+.success-stories-container {
+  background-color: white;
+  border-radius: 50px 50px 50px 0px;
+  padding: 40px;
+}
+
+.success-stories-container p {
+  color: #1c2a01;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* .image-gallery {
   display: flex;
 }
 
 .image-gallery img {
   height: 200px;
   width: 14.286%;
-}
+} */
 
 footer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -324,19 +343,23 @@ footer p {
 
 .contact-info {
   display: flex;
-  justify-content: space-evenly;
+  gap: 45px;
+  justify-content: center;
 }
 
-.location-and-hours {
-  padding: 30px 0 0 0;
+.location-and-hours-container {
+  background-color: #1c2a01;
+  border-radius: 100px 100px 0px 100px;
+  padding: 60px;
+  width: 25vw;
 }
 
 .contact-form-container {
   background: rgb(237, 238, 239, 0.3);
-  border-radius: 4px;
+  border-radius: 100px 100px 100px 0px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 22vw;
+  padding: 60px;
+  width: 30vw;
 }
 
 input,
@@ -383,12 +406,8 @@ textarea {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 36px;
+    font-size: 42px;
   }
-
-  /* .image-gallery {
-    display: block;
-  } */
 
   .about-suggestions::before,
   .about-suggestions::after,
@@ -396,14 +415,17 @@ textarea {
     display: none;
   }
 
-  img {
+  /* img {
     display: block;
+    margin: 0 auto;
     width: 100%;
-  }
+  } */
 
   .service {
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    width: 85vw;
   }
 
   .by {
