@@ -320,13 +320,99 @@ h4 {
   width: 14.286%;
 } */
 
+.image-gallery-section {
+  background-color: #fff3f4;
+  padding: 60px 60px 10px 60px;
+}
+
+.image-gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat (3, 1fr);
+  grid-template-areas:
+    "a a b c"
+    "a a d d"
+    "e f g h";
+}
+
+.image-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-container-1 {
+  grid-area: a;
+}
+
+.img-1 {
+  border-radius: 40px 40px 40px 0px;
+}
+
+.img-container-2 {
+  grid-area: b;
+}
+
+.img-2 {
+  border-radius: 40px 0px 40px 40px;
+}
+
+.img-container-3 {
+  grid-area: c;
+}
+
+.img-3 {
+  border-radius: 0px 40px 40px 40px;
+}
+
+.img-container-4 {
+  grid-area: d;
+}
+
+.img-4 {
+  border-radius: 40px 40px 0px 40px;
+}
+
+.img-container-5 {
+  grid-area: e;
+}
+
+.img-5 {
+  border-radius: 0px 40px 40px 40px;
+}
+
+.img-container-6 {
+  grid-area: f;
+}
+
+.img-6 {
+  border-radius: 40px 40px 0px 40px;
+}
+
+.img-container-7 {
+  grid-area: g;
+}
+
+.img-7 {
+  border-radius: 40px 40px 40px 0px;
+}
+
+.img-container-8 {
+  grid-area: h;
+}
+
+.img-8 {
+  border-radius: 40px 40px 0px 40px;
+}
+
 footer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/pexels-los-muertos-crew-8230030.jpg") center/cover no-repeat
       fixed;
   height: 600px;
   margin: 0 auto;
-  padding: 90px 45px;
+  padding: 75px 45px;
 }
 
 footer h4 {
@@ -405,8 +491,23 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 120px 30px;
+  }
+
   h1 {
     font-size: 42px;
+  }
+
+  .about-section {
+    background-color: #fff3f4;
+    padding: 45px;
+  }
+
+  .about-suggestions {
+    position: static;
+    padding: 10px;
+    /* need to fix height and width for small screen */
   }
 
   .about-suggestions::before,
@@ -415,11 +516,25 @@ textarea {
     display: none;
   }
 
+  .services-section {
+    display: flex;
+    flex-direction: column;
+  }
+
   /* img {
-    display: block;
     margin: 0 auto;
     width: 100%;
   } */
+
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-gallery img {
+    padding: 10px;
+  }
 
   .service {
     display: block;
