@@ -322,7 +322,7 @@ h4 {
 
 .image-gallery-section {
   background-color: #fff3f4;
-  padding: 60px 60px 10px 60px;
+  padding: 60px 60px 60px 60px;
 }
 
 .image-gallery {
@@ -404,6 +404,65 @@ h4 {
 
 .img-8 {
   border-radius: 40px 40px 0px 40px;
+}
+
+.section-center {
+  display: flex;
+  justify-content: center;
+}
+
+.questions-section {
+  padding: 45px;
+}
+
+.questions-section p {
+  font-family: "Barlow", sans-serif;
+  font-size: 17px;
+  margin: 12px auto;
+}
+
+.question {
+  background: #e6f8d2;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #8c361b;
+  transition: all 200ms ease-in-out;
+}
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+
+.question-text {
+  display: none;
+}
+.show-text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
 }
 
 footer {
